@@ -1,2 +1,2 @@
 # 1DS
-atividade das aulas de programaçao e IA 2026
+Atividade das aulas de Programaçao e IA 2026.
