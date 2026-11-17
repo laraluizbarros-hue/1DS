@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larita - Smallville</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Garante que os cards fiquem empilhados na vertical */
+        /* Mantém os cards empilhados um abaixo do outro na vertical */
         main {
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza os cards na tela */
-            gap: 20px; /* Espaçamento entre um card e outro */
+            align-items: center;
+            gap: 20px;
             padding: 20px;
         }
 
-        /* Ajusta a largura máxima de cada card para não ficar esticado demais */
+        /* Coloca a imagem à esquerda e o texto à direita dentro de cada card */
         article {
             width: 100%;
-            max-width: 600px;
+            max-width: 800px; /* Aumentei um pouco para caber bem lado a lado */
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            flex-direction: row; /* Alinha imagem e texto horizontalmente */
+            align-items: flex-start; /* Alinha pelo topo */
+            text-align: left; /* Alinha o texto à esquerda */
+            gap: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        /* Impede que a imagem seja esmagada quando houver muito texto */
+        article img {
+            flex-shrink: 0;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Smallville</h1>
         <p>Compartilhando conhecimentos sobre Smallville</p>
     </header>
-
     <main>
         <article>
-            <img src="Clarck de terno.jfif" alt="Foto de Clark Kent" style="width: 300px; height: 300px; object-fit: cover;">
+            <img src="Clarck de terno.jfif" alt="Foto de Clark Kent" style="width: 250px; height: 250px; object-fit: cover;">
             <div>
                 <h2>Clark Kent</h2>
                 <p class="artigo-autor">Por: Larita</p>
@@ -45,7 +52,7 @@
         </article>
 
         <article>
-            <img src="lex.jpg" alt="Foto de Lex Luthor" style="width: 300px; height: 300px; object-fit: cover;">
+            <img src="lex.jpg" alt="Foto de Lex Luthor" style="width: 250px; height: 250px; object-fit: cover;">
             <div>
                 <h2>Lex Luthor</h2>
                 <p class="artigo-autor">Por: Larita</p>
@@ -56,7 +63,7 @@
         </article>
 
         <article>
-            <img src="lana.jpg" alt="Foto de Lana Lang" style="width: 300px; height: 300px; object-fit: cover;">
+            <img src="lana.jpg" alt="Foto de Lana Lang" style="width: 250px; height: 250px; object-fit: cover;">
             <div>
                 <h2>Lana Lang</h2>
                 <p class="artigo-autor">Por: Larita</p>
@@ -67,7 +74,7 @@
         </article>
 
         <article>
-            <img src="Chloe.jpg" alt="Foto de Chloe Sullivan" style="width: 300px; height: 300px; object-fit: cover;">
+            <img src="Chloe.jpg" alt="Foto de Chloe Sullivan" style="width: 250px; height: 250px; object-fit: cover;">
             <div>
                 <h2>Chloe Sullivan</h2>
                 <p class="artigo-autor">Por: Larita</p>
@@ -78,7 +85,7 @@
         </article>
 
         <article>
-            <img src="Luffy.jpg" alt="Imagem de boas-vindas" style="width: 300px; height: 300px; object-fit: cover;">
+            <img src="Luffy.jpg" alt="Imagem de boas-vindas" style="width: 250px; height: 250px; object-fit: cover;">
             <div>
                 <h2>Meu primeiro post</h2>
                 <p class="artigo-autor">Por: Larita</p>
@@ -88,9 +95,7 @@
             </div>
         </article>
     </main>
-
     <script src="script.js"></script>
 </body>
+
 </html>
-
-
