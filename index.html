@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larita - Smallville</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Garante que os cards fiquem empilhados na vertical */
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza os cards na tela */
+            gap: 20px; /* Espaçamento entre um card e outro */
+            padding: 20px;
+        }
+
+        /* Ajusta a largura máxima de cada card para não ficar esticado demais */
+        article {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <h1>Smallville</h1>
         <p>Compartilhando conhecimentos sobre Smallville</p>
@@ -74,4 +93,4 @@
 </body>
 </html>
 
-</html>
+
